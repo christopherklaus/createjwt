@@ -30,6 +30,7 @@ request.get({
     Authorization: 'Bearer ' + jwtToken
   }
 }, (error, response, body) => {
+  console.log(jwtToken)
   console.log('error:', error)
   console.log('statusCode:', response && response.statusCode)
   console.log('body:', body)
